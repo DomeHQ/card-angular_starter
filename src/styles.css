@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --app-bg: #FFFFFF;
+  --app-text: #212121;
+}
+
+:root[data-theme='dark'] {
+  --app-bg: #121212;
+  --app-text: #ABB5BD;
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+}

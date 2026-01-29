@@ -1,0 +1,17 @@
+<main class="main">
+  <div class="content">
+    @if (user()) {
+      <h1>Hello {{ user()?.name?.given }} {{ user()?.name?.family }},</h1>
+      <p>Congratulations! Your card is running. 🎉</p>
+    }
+    @else if (initError()) {
+      <h3>Initialization Failed</h3>
+      <p>{{initError()?.message}} ({{initError()?.error_code}})</p>
+    }
+    @else {
+      <p>Please wait.. card is initializing...</p>
+    }
+  </div>
+</main>
+
+<router-outlet />

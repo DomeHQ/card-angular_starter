@@ -20,8 +20,8 @@ Before getting started, ensure the following tools and access are available on y
 
 ### 1. Create Your Card in Dome
 
-1. Go to [https://dome.so/developer](https://dome.so/developer) and join the **Dome Developer** Dome.
-2. Open **My Cards** and click **Add Card**.
+1. Go to [https://dome.so/developer](https://dome.so/developer) and join the **Dome Developer** dome (mini-app).
+2. Open the **Cards** tab and click **Add Card**.
 3. After creating your card you should see it listed with the following details:
 
    - Card name
@@ -37,7 +37,7 @@ Before getting started, ensure the following tools and access are available on y
 3. Update the following fields:
 
    - `name`: Your card name
-   - `iuid`: Paste the Card ID from **My Cards**
+   - `iuid`: Paste the Card ID from **Cards** tab
 
 > Note: The `iuid` is essential for building, identifying, and deploying your card within Dome.
 
@@ -50,7 +50,7 @@ It handles initialization, authentication, permissions, events, and communicatio
 
 The starter project already includes SDK initialization logic. You only need to provide the decryption key.
 
-1. In **My Cards**, open your card and click **Show Decryption Key**.
+1. In **Cards** tab, open your card and click **Show Decryption Key**.
 2. Copy the decryption blob (JSON).
 3. Paste the blob into the ngStarterDecBlob constant in the starter code.
 
@@ -86,7 +86,7 @@ Before deploying, ensure the following:
 
 ### Add the Deployment Token
 
-1. In **My Cards**, open your card and click **Get Deployment Token**.
+1. In **Cards** tab, open your card and click **Get Deployment Token**.
 2. Copy the generated token.
 3. In your GitHub repository:
 
@@ -203,7 +203,7 @@ To ensure the UI updates correctly, any state mutations performed inside SDK cal
 
 Without this, values that control the UI state may update internally, but Angular templates may not re-render.
 
-#### Example
+**Example:**
 
 ```ts
 onInit: (data: any) => {
@@ -244,7 +244,7 @@ The workflow must be referenced using a **tag**, allowing your card to:
 - Pin to a **known-good version**, or
 - Track the **latest stable release**
 
-#### Example
+**Example:**
 
 ```yaml
 uses: InTouchSO/cards-ci/.github/workflows/card-release.yml@stable

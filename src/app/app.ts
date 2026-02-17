@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, NgZone, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CardEventHandler, CardInitData, CardInitErrorPayload, CardSdk, CardUiProps, CardUser, getKeyFromBlob } from 'dome-embedded-app-sdk';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

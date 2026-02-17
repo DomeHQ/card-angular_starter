@@ -247,7 +247,7 @@ The workflow must be referenced using a **tag**, allowing your card to:
 **Example:**
 
 ```yaml
-uses: InTouchSO/cards-ci/.github/workflows/card-release.yml@stable
+uses: DomeHQ/cards-ci/.github/workflows/card-release.yml@stable
 ```
 
 ---
